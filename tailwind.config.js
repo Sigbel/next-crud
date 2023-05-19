@@ -5,6 +5,23 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    // {
+    //   pattern: /^bg-/,
+    // },{
+    //   pattern: /^to-/,
+    // },{
+    //   pattern: /^from-/,
+    // },
+    {
+      pattern: /bg-(green|blue|gray)-(400|700)/,
+    },{
+      pattern: /from-(green|blue|gray)-(400|700)/,
+    },{
+      pattern: /to-(green|blue|gray)-(400|700)/,
+    },
+
+  ],
   theme: {
     extend: {
       backgroundImage: {
